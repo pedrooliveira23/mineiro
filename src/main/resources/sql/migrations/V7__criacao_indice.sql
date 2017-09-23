@@ -1,0 +1,1 @@
+CREATE INDEX `idx_Estado_mediaTempoPorPFInd`  ON `mineiro`.`Estado` (mediaTempoPorPFInd) COMMENT ''

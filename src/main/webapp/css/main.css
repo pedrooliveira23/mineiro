@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Muda o valor do caminho das imagens do bootstrap pretas */
+
+[class^="icon-"],
+[class*=" icon-"] {
+
+  background-image: url("vendor/bootstrap/img/glyphicons-halflings.png");
+
+}
+
+/* Muda o valor do caminho das imagens do bootstrap brancas */
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"] {
+  background-image: url("vendor/bootstrap/img/glyphicons-halflings-white.png");
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+fieldset {
+	margin: 10px 0;
+	min-height: 85px;
+}
+
+
+.h5-chart{
+	text-align: center;
+}
+
+.tr-branca{
+	background: #FFF;
+}
+
+.tr-cinza{
+	background: #F9F9F9;
+}
+
+.tr-glosa{
+	color:  #e9322d;
+}
+
+.tr-normal{
+}
+
+.invisivel{
+	display: none;
+}	
+
+span.error{
+	color: red;	
+}
+input.error{
+	border-color: red;
+}
+select.error{
+	border-bottom-color: red;
+	border-left-color: red;
+	border-right-color: red;
+	border-top-color: red;
+}
+textarea.error{
+	border-bottom-color: red;
+	border-left-color: red;
+	border-right-color: red;
+	border-top-color: red;
+}
+.hide{
+	display: none;	
+}
+
+a.versao:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.versao{
+	width: 130px;
+	padding: 5px 10px!important;
+        float: right;
+        display: block;
+        float: right;
+
+        margin-left: -20px;
+        font-size: 12px;
+        font-weight: 200;
+        color: #777;
+}
+.versao span{
+	margin: 8px 0 0 10px;	
+	display: inline-block;
+	line-height: 20px;
+}
+
+.brand{
+	width: 225px;
+	padding: 5px 10px!important;	
+}
+.brand span{
+	margin: 8px 0 0 10px;	
+	display: inline-block;
+	line-height: 20px;
+}
+.brand img{
+	margin: 0;	
+	display: inline-block;
+}
+
+
+.navbar .nav > li > a{
+	padding: 15px 14px 14px 14px;
+	
+	
+}
+#li-nav-sair{
+	margin-left: 15px;	
+}
+
+#li-nav-fabrica{
+	margin-top: 15px;	
+}
+
+
+.row{
+	margin-bottom: 20px;
+}
+
+
+small{
+	display: block;
+	clear: both;	
+}	
+
+
+
+

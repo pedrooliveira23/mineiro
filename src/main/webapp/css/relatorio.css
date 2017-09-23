@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+/*INICIO - Página Listar Relatório*/
+	
+.table-relatorios {
+	margin: 10px 0 0 0;
+}
+
+.btn-acao {
+	width: 90px;
+}
+
+.table-relatorios-col-titulo {
+	width: 70%;
+}
+
+.table-relatorios-col-acoes {
+	width: 30%;
+}
+
+.table-relatorios-td-acoes,.table-relatorios-th-acoes {
+	text-align: center !important;
+}
+
+/*FIM - Página Listar Relatório*/
+
+	
+/*INICIO - Página Visualizar Relatório*/
+	
+.tableRelatorio-col-trasicao{
+	width: 70%;
+}
+.tableRelatorio-col-tempo{
+	width: 30%;
+}
+.tableRelatorio .tableRelatorio-td-trasicao{
+	padding: 8px 8px 8px 38px; 
+}
+.tableRelatorio .tableRelatorio-td-duracaoTotal,.tableRelatorio  .tableRelatorio-td-duracaoContandoPrazo{
+	padding: 8px 8px 8px 18px; 
+	font-weight: bold;
+}
+caption {
+	text-align: left;
+}
+
+@media print
+{
+
+
+	
+body { font-family: Georgia, ‘Times New Roman’, serif; }
+
+header, footer {
+display: none;
+}
+	
+a:link, a:visited { font-weight: bold; text-decoration: underline; color: #06c; content: " (" attr(href) ") ";
+  font-size: 90%; }
+.navbar, .noprint
+{
+display: none;
+}	
+	
+table{ page-break-after:always;  }	
+
+
+.container
+{
+width: 100%; margin: 0; float: none;
+}
+
+thead {display: table-header-group;}
+tfoot { display: table-row-group;}
+tbody { display: table-row-group;}
+	
+       
+
+}
+
+/*FIM - Página Visualizar Relatório*/

@@ -1,0 +1,347 @@
+@CHARSET "UTF-8";
+.container{width:1270px}
+form {
+	margin: 0 !important;
+}
+.popover-indicador-width{
+	width: 140px !important;	
+}
+.popover-ordemServico-incompleta-width{
+	width: 350px !important;
+}	
+#form-ordemServico-tempo .input-data, #select-referenciaPesquisa, #select-classificacao{
+	margin-right:10px; 
+	margin-left: 4px;
+	
+}
+#form-ordemServico-tempo{
+
+	margin-bottom: 20px !important;	
+}	
+#select-referenciaPesquisa{
+	width: 110px;	
+}
+#select-classificacao{
+	width: 120px;	
+}
+
+#form-ordemServico-tempo  #btn-pesquisar{
+	margin-left: 15px;	
+}	
+.table-ordemServico {
+	margin: 10px 0 0 0;
+	cursor: default;
+		border-bottom: 1px solid #DDD;
+}
+
+.btn{
+        margin: 2px;
+}	
+
+.btn-acao {
+	width: 96px;
+}
+
+.table-ordemServico-col-titulo {
+	width: 25%;
+}
+.table-ordemServico-col-data {
+	width: 5%;
+}
+.table-ordemServico-col-situacao {
+	width: 3%;
+}
+.table-ordemServico-col-tamanho {
+	width: 3%;
+}
+
+.table-ordemServico-col-projeto {
+	width: 14%;
+}
+.table-ordemServico-col-acoes {
+	width: 20%;
+}
+.table-ordemServico-col-indicador-atraso,
+.table-ordemServico-col-indicador-recusa,
+.table-ordemServico-col-indicador-conformidade{
+	width: 3%;
+}
+
+.table-ordemServico-col-index{
+	width: 1%;
+}
+.table-ordemServico-td-acoes,.table-ordemServico-th-acoes,.table-ordemServico-th-situacao, .table-ordemServico-td-situacao,
+.table-ordemServico-td-tamanho,.table-ordemServico-th-tamanho,.table-ordemServico-td-projeto,
+	.table-ordemServico-th-indicador, .table-ordemServico-td-indicador, .table-ordemServico-th-data,
+	.table-ordemServico-td-data,.table-ordemServico-col-index{
+	text-align: center !important;
+}
+
+.table-ordemServico-td-situacao,.table-ordemServico-td-projeto,.table-ordemServico-td-tamanho,.table-ordemServico-td-indicador,.table-ordemServico-td-data,.table-ordemServico-td-titulo,.table-ordemServico-td-titulo-os-incompleta {
+	border-left: 1px solid #DDD;
+}
+
+.table-ordemServico-td-titulo-os-incompleta{
+	color:red;	
+}	
+.table-cronometroOrdemServico-tr-justificativa .span-autor{
+		display:block;
+		margin:0 0 0 30px; 
+		
+}
+.table-cronometroOrdemServico-tr-justificativa .span-justificativa{
+		display:block;
+		margin:0 0 0 30px;  
+}
+.span-tipoRelatorio{
+	margin: 0;	
+	display: inline-block;
+}	
+
+.table-cronometroOrdemServico {
+	margin: 50px 0 0 0;
+		border-bottom: 1px solid #DDD;
+}
+
+
+	
+.table-cronometroOrdemServico-col-trasicao{
+	width: 22%;
+}
+.table-cronometroOrdemServico-col-contaTempoOS{
+	width: 6%;
+}
+.table-cronometroOrdemServico-col-contaRecusaOS{
+	width: 6%;
+}
+.table-cronometroOrdemServico-col-tempo{
+	width: 21%;
+}
+.table-cronometroOrdemServico-col-tempoUtil{
+	width: 21%;
+}
+.table-cronometroOrdemServico-col-periodo{
+	width: 24%;
+}
+
+
+
+
+.table-cronometroOrdemServico .table-cronometroOrdemServico-th-contaRecusaOS,
+	.table-cronometroOrdemServico .table-cronometroOrdemServico-th-contaTempoOS {
+	text-align: center!important; 
+}
+
+.table-cronometroOrdemServico .table-cronometroOrdemServico-td-contaRecusaOS,
+	.table-cronometroOrdemServico .table-cronometroOrdemServico-td-contaTempoOS {
+	text-align: center!important; 
+}
+.table-cronometroOrdemServico .table-cronometroOrdemServico-td-duracaoTotal,
+	.table-cronometroOrdemServico .table-cronometroOrdemServico-td-duracaoContandoTempoOS,
+	.table-cronometroOrdemServico  .table-cronometroOrdemServico-td-quantidadeDiasAtraso,
+ .table-cronometroOrdemServico .table-cronometroOrdemServico-td-prazoMaximo{
+	padding: 8px 8px 8px 18px; 
+	font-weight: bold;
+}
+#btn-tipoRelatorio, #btn-finalizar, #btn-refShow{
+	margin: 25px 20px 0 0;	
+	
+}	
+
+.rlt-referencias{
+    margin: 50px 0 0 0;
+}
+caption{
+	padding: 15px !important;
+	background: #EEE;
+	font-size: 16px !important;
+	font-weight: bold;
+}
+
+.table-valorOrdemServico {
+	margin: 50px 0 0 0;
+	border-bottom: 1px solid #DDD;
+}
+
+
+
+	
+.table-valorOrdemServico-col-calculo{
+	width: 52%;
+}
+.table-valorOrdemServico-col-valor{
+	width: 48%;
+}
+
+
+.table-valorOrdemServico .table-valorOrdemServico-td-valorTotalFinal{
+	padding: 8px 8px 8px 18px; 
+	font-weight: bold;
+}
+
+.table-valorOrdemServico .table-valorOrdemServico-td-GlosaMulta{
+	padding: 8px 8px 8px 18px; 
+	font-weight: bold;
+  
+}
+
+.table-valorOrdemServico .table-valorOrdemServico-td-valorGlosaMulta{
+
+        color: red;
+}
+
+.table-dadosOrdemServico {
+	margin: 50px 0 0 0;
+	border-bottom: 1px solid #DDD;
+}
+
+
+
+	
+.table-dadosOrdemServico-col-titulo{
+	width: 30%;
+}
+.table-dadosOrdemServico-col-valor{
+	width: 80%;
+}
+
+
+
+.table-dadosOrdemServico .table-dadosOrdemServico-td-titulo{
+	border-right: 1px solid #DDD;
+	font-weight: bold;
+
+}
+
+
+.table-nivelServicoOrdemServico {
+	margin: 50px 0 0 0;
+	border-bottom: 1px solid #DDD;
+}
+
+	
+.table-nivelServicoOrdemServico-col-indicador{
+	width: 40%;
+}
+.table-nivelServicoOrdemServico-col-valor{
+	width: 30%;
+}
+.table-nivelServicoOrdemServico-col-classificacao{
+	width: 30%;
+}
+
+.table-nivelServicoOrdemServico th{
+			text-align: center !important;
+}	
+.table-nivelServicoOrdemServico .table-nivelServicoOrdemServico-td-indicador,
+	.table-nivelServicoOrdemServico .table-nivelServicoOrdemServico-td-valor,
+	.table-nivelServicoOrdemServico .table-nivelServicoOrdemServico-td-classificacao{
+		text-align: center !important;
+}	
+.table-nivelServicoOrdemServico .table-nivelServicoOrdemServico-td-valor{
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+
+
+}
+
+
+.table-inspecaoOrdemServico {
+	margin: 50px 0 0 0;
+	border-bottom: 1px solid #DDD;
+}
+
+
+
+	
+.table-inspecaoOrdemServico-col-inspecao{
+	width: 50%;
+}
+.table-inspecaoOrdemServico-col-percentual{
+	width: 50%;
+}
+
+.table-inspecaoOrdemServico-td-conformidadeDemanda{
+	font-weight: bold;
+	
+}
+
+.h4-ordemServico-relatorio{
+	text-align: center;
+	
+}	
+
+@media print
+{
+
+
+	
+body { 
+	font-family: Georgia, ‘Times New Roman’, serif; 
+	padding: 0;
+}
+
+.navbar, footer, .breadcrumb, hr {
+display: none;
+}
+	
+a:link, a:visited { font-weight: bold; text-decoration: underline; color: #06c; content: " (" attr(href) ") ";
+  font-size: 90%; }
+.navbar, .noprint
+{
+display: none;
+}	
+	
+
+	
+	
+
+caption{
+	padding: 10px;
+	background: #EEE;
+	font: 16px;
+}
+
+.container
+{
+width: 100%; margin: 0; float: none;
+}
+
+thead {display: table-header-group;}
+tfoot { display: table-row-group;}
+tbody { display: table-row-group;}
+	
+
+	
+.table-dadosOrdemServico {
+	margin: 20px 0 0 0;
+	 page-break-after:avoid!important;
+}
+	
+.table-dadosOrdemServico caption{
+	padding: 10px 0;
+	background: #EEE !important;
+}	
+	
+.table-nivelServicoOrdemServico {
+	margin: 20px 0 0 0;
+	page-break-after:always;
+}	
+
+.table-valorOrdemServico {
+	margin: 20px 0 0 0;
+	 page-break-after:avoid!important;
+}
+	
+.table-cronometroOrdemServico {
+	margin: 20px 0 0 0;
+	page-break-after:always;
+}
+	
+.table-inspecaoOrdemServico {
+	margin: 20px 0 0 0;
+	 page-break-after:avoid!important;
+}	
+}
+
+

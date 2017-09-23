@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+
+.btn-submit{
+	margin: 0 0 20px 0;	
+}
+
+#div-alert{
+	display: block;
+	height: 56px;
+	width: 100%;
+	clear: both;
+	
+		
+}
+
+.table-estado-col-estado{
+	width: 60%;
+}	
+.table-estado-col-contaTempoOS{
+	width: 20%;
+}	
+.table-estado-col-contaRecusaOS{
+	width: 20%;
+}
+
+.table-estado .table-estado-th-contaRecusaOS,
+.table-estado .table-estado-th-contaTempoOS {
+	text-align: center!important; 
+}
+
+.table-estado .table-estado-td-contaRecusaOS,
+.table-estado .table-estado-td-contaTempoOS {
+	text-align: center!important; 
+}

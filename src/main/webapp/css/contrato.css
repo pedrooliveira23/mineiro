@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+#h4-inspecao{
+	
+margin: 0 0 30px 0;
+}
+	
+form{
+	margin: 0 !important;
+}	
+
+
+.table-inspecao{
+	
+	margin: 10px 0 0 0;	
+}
+
+.col-contrato{
+	width: 20%;
+}		
+.col-contratada
+{
+	width: 20%;
+}
+.col-quantidade
+{
+	width: 15%;
+}
+.col-valor
+{
+	width: 15%;
+}
+
+.col-acoes{
+	width: 30%;
+}
+
+.table-inspecao th, .table-inspecao td{
+	text-align: center;	
+}
+table .btn{
+	
+	margin: 0 5px 0 5px;
+}
+.btn-acao{
+	width: 90px;	
+}
+
+select{
+	width: 500px;	
+}
+
+	
+
+.table-inspecao-td-acoes, .table-inspecao-th-acoes {
+		text-align: center !important;	
+}
+
+#span-percentualAprovacao{
+	font-size:18px;
+	font-weight: bold;
+}	

@@ -1,0 +1,43 @@
+#div-alert{
+	height: 60px;	
+	
+}
+
+
+.table-configuracao {
+
+	border-bottom: 1px solid #DDD;	
+
+}
+	
+.table-configuracao caption{
+	padding: 15px !important;
+	background: #EEE;
+	font-size: 16px !important;
+	font-weight: bold;
+}
+
+
+
+
+
+	
+.table-configuracao-col-titulo{
+	width: 30%;
+}
+.table-configuracao-col-valor{
+	width: 80%;
+}
+
+
+
+.table-configuracao .table-configuracao-td-titulo{
+	border-right: 1px solid #DDD;
+	font-weight: bold;
+
+}
+
+#table-configuracao-bancos{
+	margin: 50px 0 0 0;
+}	
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition name="template-main" template="/WEB-INF/jsp/layouts/main.jsp">
+		<put-attribute name="title" value="Mineiro" cascade="true" />
+		<put-attribute name="primary-content" value="" />
+		<put-attribute name="navigation-bar" value="/WEB-INF/jsp/sections/navbar.jsp" />
+		<put-attribute name="footer-content" value="/WEB-INF/jsp/sections/footer.jsp" />
+		<put-attribute name="css" value="" type="string" />
+		<put-attribute name="js" value="/js/main.js" type="string" />
+
+	</definition>
+
+	<definition name="dashboard" extends="template-main">
+		<put-attribute name="js" value="/js/dashboard.js" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/dashboard/dashboard.jsp" />
+	</definition>
+	
+	<definition name="autenticacao" extends="template-main">
+		<put-attribute name="css" value="/css/autenticacao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/autenticacao/autenticacao.jsp" />
+	</definition>
+	
+	<definition name="listarDiaNaoUtil" extends="template-main">
+		<put-attribute name="css" value="/css/diaNaoUtil.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/diretrizGlobal/diaNaoUtil/listarDiaNaoUtil.jsp" />
+	</definition>
+	
+	<definition name="criarDiaNaoUtil" extends="template-main">
+		<put-attribute name="js" value="/js/diaNaoUtil.js" type="string" />
+		<put-attribute name="css" value="/css/diaNaoUtil.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/diretrizGlobal/diaNaoUtil/criarDiaNaoUtil.jsp" />
+	</definition>
+	
+	<definition name="listarEstado" extends="template-main">
+		<put-attribute name="js" value="/js/estado.js" type="string" />
+		<put-attribute name="css" value="/css/estado.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/diretrizGlobal/estado/listarEstado.jsp" />
+	</definition>
+	
+	<definition name="editarOrdemServico" extends="template-main">
+		<put-attribute name="js" value="/js/ordemServico.js" type="string" />
+		<put-attribute name="css" value="/css/ordemServico.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/ordemServico/editarOrdemServico.jsp" />
+	</definition>
+	
+	<definition name="listarOrdemServico" extends="template-main">
+		<put-attribute name="js" value="/js/ordemServico.js" type="string" />
+		<put-attribute name="css" value="/css/ordemServico.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/ordemServico/listarOrdemServico.jsp" />
+	</definition>
+	
+	<definition name="listarTransicaoOrdemServico" extends="template-main">
+		<put-attribute name="js" value="/js/ordemServico.js" type="string" />
+		<put-attribute name="css" value="/css/transicao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/ordemServico/transicao/listarTransicao.jsp" />
+	</definition>
+	
+	<definition name="listarTransicaoOrdemServicoPreposto" extends="template-main">
+		<put-attribute name="js" value="/js/ordemServico.js" type="string" />
+		<put-attribute name="css" value="/css/transicao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/ordemServico/transicao/listarTransicaoPreposto.jsp" />
+	</definition>
+	
+	<definition name="editarTransicaoOrdemServico" extends="template-main">
+		<put-attribute name="js" value="/js/ordemServico.js" type="string" />
+		<put-attribute name="css" value="/css/transicao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/ordemServico/transicao/editarTransicao.jsp" />
+	</definition>
+	
+	<definition name="listarInspecao" extends="template-main">
+		<put-attribute name="js" value="/js/inspecao.js" type="string" />
+		<put-attribute name="css" value="/css/inspecao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/inspecao/listarInspecao.jsp" />
+	</definition>
+	
+	<definition name="criarInspecao" extends="template-main">
+		<put-attribute name="js" value="/js/inspecao.js" type="string" />
+		<put-attribute name="css" value="/css/inspecao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/inspecao/criarInspecao.jsp" />
+	</definition>
+	
+	<definition name="editarInspecao" extends="template-main">
+		<put-attribute name="js" value="/js/inspecao.js" type="string" />
+		<put-attribute name="css" value="/css/inspecao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/inspecao/editarInspecao.jsp" />
+	</definition>
+	
+
+	
+	<definition name="listarConfiguracao" extends="template-main">
+		<put-attribute name="js" value="/js/configuracao.js" type="string" />
+		<put-attribute name="css" value="/css/configuracao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/configuracao/listarConfiguracao.jsp" />
+	</definition>
+        
+        <definition name="listarContrato" extends="template-main">
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/listarContrato.jsp" />
+	</definition>
+        
+        <definition name="criarContrato" extends="template-main">
+                <put-attribute name="js" value="/js/contrato.js" type="string" />
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/criarContrato.jsp" />
+	</definition>
+        
+        <definition name="editarContrato" extends="template-main">
+                <put-attribute name="js" value="/js/contrato.js" type="string" />
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/editarContrato.jsp" />
+	</definition>
+        
+        <definition name="criarValor" extends="template-main">
+                <put-attribute name="js" value="/js/contrato.js" type="string" />
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/valores/criarValor.jsp" />
+	</definition>
+        
+        <definition name="editarValor" extends="template-main">
+                <put-attribute name="js" value="/js/contrato.js" type="string" />
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/valores/editarValor.jsp" />
+	</definition>
+        
+         <definition name="excluirValor" extends="template-main">
+                <put-attribute name="js" value="/js/contrato.js" type="string" />
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/valores/excluirValor.jsp" />
+	</definition>
+	
+</tiles-definitions>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+		<script src="/js/vendor/highstock/jquery.min.js"></script>
+
+		
+		<style type="text/css">
+
+		</style>
+		<script type="text/javascript">//<![CDATA[ 
+$(function() {
+	$('#container').highcharts({
+	    
+	    chart: {
+            renderTo: 'container',
+            defaultSeriesType: 'column',
+            zoomType: 'xy'
+        },
+        title: {
+            text: 'Project wise Budget Estimation'
+        },
+        subtitle: {
+            text: 'Select area to zoom.Click Reset Zoom to reset selection'
+        },
+        credits: {
+            enabled: true,
+            position: {
+                align: 'right',
+                x: -10,
+                verticalAlign: 'bottom',
+                y: -5
+            },
+            href: "http://www.qualiantech.com",
+            text: "Qualian Technologies Pvt Ltd"
+        },
+        xAxis: {
+            categories: ['VGP resort <br/>in (USD)', 'Spec info city <br/>in (USD)', 'Balewadi <br/>in (USD)', 'WTC <br/>in (INR)', 'Vizag Homes <br/>in (INR)', 'Aditi farms <br/>in (INR)'],
+            min: 3
+
+        },
+        scrollbar: {
+            enabled: true
+        },
+
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Amount Distribution'
+            }
+        },
+        legend: {
+            shadow: true
+        },
+        tooltip: {
+            useHTML: true,
+            headerFormat: '<small>{point.key}</small><table>',
+            pointFormat: '<tr><td style="color: {series.color}">{series.name}:{point.y} </td>',
+            footerFormat: '</table>',
+            valueDecimals: 2,
+            crosshairs: [{
+                width: 1,
+                color: 'Gray'},
+            {
+                width: 1,
+                color: 'gray'}]
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0.5
+            }
+        },
+        series: [{
+            name: 'Capital',
+            data: [100000.00, 100000.00, 100000.00, 100000.00, 100000.00, 100000.00]},
+        {
+            name: 'Material',
+            data: [0.00, 4357498.00, 0.00, 986000.00, 89158220.00, 0.00]},
+        {
+            name: 'HR',
+            data: [36000000.00, 323360000.00, 80000.00, 5600000.00, 2769017840.00, 0.00]},
+        {
+            name: 'Equipment',
+            data: [4400000.00, 160000000.00, 8000.00, 880000.00, 910400000.00, 0.00]},
+        {
+            name: 'Petty Cash',
+            data: [10000.00, 10000.00, 10000.00, 100000.00, 1000.00, 10000.00]}],
+	    
+	    scrollbar: {
+            enabled:true,
+			barBackgroundColor: 'gray',
+			barBorderRadius: 7,
+			barBorderWidth: 0,
+			buttonBackgroundColor: 'gray',
+			buttonBorderWidth: 0,
+			buttonArrowColor: 'yellow',
+			buttonBorderRadius: 7,
+			rifleColor: 'yellow',
+			trackBackgroundColor: 'white',
+			trackBorderWidth: 1,
+			trackBorderColor: 'silver',
+			trackBorderRadius: 7
+	    }
+	});
+});
+//]]> 
+
+		</script>
+	</head>
+	<body>
+
+<script src="/js/vendor/highstock/js/highstock.js "></script>
+<script src="/js/vendor/highstock/js/modules/exporting.js"></script>
+
+<div id="container" style="height: 400px"></div>
+
+	</body>
+</html>

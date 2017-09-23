@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+#h4-inspecao{
+	
+margin: 0 0 30px 0;
+}
+	
+form{
+	margin: 0 !important;
+}	
+
+fieldset {
+	margin: 20px 0;
+}
+#form-inspecao-adicionar{
+	
+}
+.table-inspecao, .table-ordemDeServico{
+	
+	margin: 10px 0 0 0;	
+}
+
+.table-inspecao-col-titulo{
+	width: 55%;
+}		
+.table-inspecao-col-percentual
+{
+	width: 25%;
+}
+.table-inspecao-col-acoes
+{
+	width: 30%;
+}
+
+
+.table-inspecao th, .table-inspecao td{
+	text-align: center;	
+}
+table .btn{
+	
+	margin: 0 5px 0 5px;
+}
+.btn-acao{
+	width: 100px;	
+}
+
+select{
+	width: 500px;	
+}
+
+	
+
+.table-ordemDeServico-td-acoes, .table-ordemDeServico-th-acoes {
+		text-align: center !important;	
+}
+

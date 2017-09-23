@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+form{
+	margin: 0 !important;
+}	
+
+fieldset {
+	margin: 20px 0;
+}
+#form-diaNaoUtil-adicionar{
+	
+}
+.table-diaNaoUtil{
+	
+	margin: 20px 0 0 0;	
+}
+
+.table-diaNaoUtil-col-data .table-diaNaoUtil-col-repete{
+	width: 15%;
+}	
+.table-diaNaoUtil-col-ativo{
+	width: 10%;
+}		
+.table-diaNaoUtil-col-titulo
+{
+	width: 40%;
+}
+.table-diaNaoUtil-col-acoes{
+	width: 20%;
+}
+
+.table-diaNaoUtil th,.table-diaNaoUtil td{
+	text-align: center;	
+}
+.table-diaNaoUtil .btn{
+	
+	margin: 0 5px 0 5px;
+}
+
+.btn-acao{
+	width: 70px;	
+}	
+	

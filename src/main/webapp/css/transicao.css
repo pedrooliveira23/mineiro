@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+
+	
+.table-transicao {
+	margin: 10px 0 0 0;
+}
+
+.table-transicao-col-nota{
+	width: 4%;
+}	
+.table-transicao-col-trasicao{
+	width: 19%;
+}
+.table-transicao-col-contaTempo{
+	width: 10%;
+}
+.table-transicao-col-contaTransicao{
+	width: 10%;
+}
+.table-transicao-col-tempo{
+	width: 17%;
+}
+.table-transicao-col-tempoUtil{
+	width: 17%;
+}
+.table-transicao-col-periodo{
+	width: 17%;
+}
+.table-transicao-col-acoes{
+	width: 6%;
+}
+.table-transicao .table-transicao-td-trasicao{
+	padding: 8px 8px 8px 38px; 
+}
+
+.table-transicao .table-transicao-th-acoes, 
+	.table-transicao .table-transicao-th-contaRecusaOS,
+	.table-transicao .table-transicao-th-contaTempoOS {
+	text-align: center!important; 
+}
+
+.table-transicao .table-transicao-td-acoes,
+	.table-transicao .table-transicao-td-contaRecusaOS,
+	.table-transicao .table-transicao-td-contaTempoOS {
+	text-align: center!important; 
+}
+
+.table-transicao .table-transicao-td-duracaoTotal, 
+	.table-transicao .table-transicao-td-duracaoContandoTempoOS, 
+	.table-transicao .table-transicao-td-duracaoContandoTempoCJF, 
+	.table-transicao .table-transicao-td-duracaoContandoTempoContratada, 
+	.table-transicao .table-transicao-td-quantidadeDiasAtraso,
+ .table-transicao .table-transicao-td-prazoMaximo{
+	padding: 8px 8px 8px 18px; 
+	font-weight: bold;
+}
+
+textarea{
+	width: 500px;	
+}
+
+#fieldset-justificativa{
+	min-height: 120px;
+}
+
+#h4-transicao-editar{
+	margin-bottom: 20px;
+}	
+
+caption {
+	text-align: left;
+}
+.table-transicao-tr-nota .span-autor{
+		display:block;
+		margin:0 0 0 70px;
+		
+}
+.table-transicao-tr-nota .span-nota{
+		display:block;
+		margin:0 0 0 70px;  
+}
+.button-expandir-tr{
+	cursor: pointer;
+	
+}
+
