@@ -94,12 +94,12 @@
         </dependency>
 
 
-        <!-- Driver do oracle -->
+<!--        &lt;!&ndash; Driver do oracle &ndash;&gt;
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc</artifactId>
             <version>11.2.0.3.0</version>
-        </dependency>
+        </dependency>-->
 
 
         <!-- Apache Axis -->
