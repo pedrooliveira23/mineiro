@@ -362,9 +362,9 @@
 
             <properties>
 				<flyway.validateOnMigrate>false</flyway.validateOnMigrate>
-                <flyway.url>${url}</flyway.url>
-                <flyway.user>${usuario}</flyway.user>
-                <flyway.password>${password}</flyway.password>
+                <flyway.url>localhost:3306/mineiro</flyway.url>
+                <flyway.user>root</flyway.user>
+                <flyway.password>root</flyway.password>
                 <flyway.locations> sql/migrations</flyway.locations>
                 <!--<flyway.schemas>mineiro</flyway.schemas>-->
             </properties>
