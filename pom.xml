@@ -362,11 +362,11 @@
 
             <properties>
 				<flyway.validateOnMigrate>false</flyway.validateOnMigrate>
-                <flyway.url>localhost:3306/mineiro</flyway.url>
+                <flyway.url>jdbc:mysql://localhost:3306/</flyway.url>
                 <flyway.user>root</flyway.user>
                 <flyway.password>root</flyway.password>
                 <flyway.locations> sql/migrations</flyway.locations>
-                <!--<flyway.schemas>mineiro</flyway.schemas>-->
+                <flyway.schemas>mineiro</flyway.schemas>
             </properties>
             
 			
