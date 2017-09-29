@@ -400,9 +400,9 @@
                 </resources>
             </build>
             <properties>
-                <flyway.url>${url}</flyway.url>
-                <flyway.user>${usuario}</flyway.user>
-                <flyway.password>${password}</flyway.password>
+                <flyway.url>jdbc:mysql://localhost:3306/</flyway.url>
+                <flyway.user>root</flyway.user>
+                <flyway.password>root</flyway.password>
                 <flyway.locations> sql/migrations</flyway.locations>
                 <flyway.schemas>mineiro</flyway.schemas>
             </properties>
@@ -439,10 +439,11 @@
           
             </build>
             <properties>
-                <flyway.url>${url}</flyway.url>
-                <flyway.user>${usuario}</flyway.user>
-                <flyway.password>${password}</flyway.password>
+                <flyway.url>jdbc:mysql://localhost:3306/</flyway.url>
+                <flyway.user>root</flyway.user>
+                <flyway.password>root</flyway.password>
                 <flyway.locations>sql/migrations, sql/test</flyway.locations>
+                <flyway.schemas>mineiro</flyway.schemas>
             </properties>
 
         </profile>
