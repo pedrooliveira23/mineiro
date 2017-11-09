@@ -14,7 +14,7 @@
 </c:if>
 
 <div id="div_cadadstro" class="row-fluid">
-<form id="form_cadastro" method="post" action="<c:url value='/login' />"  >
+<form id="form_cadastro" method="post" action="<c:url value='/cadastrar' />"  >
 	<form:errors cssClass="error" />
 	<fieldset>
 	<label for="input_email">E-mail</label>

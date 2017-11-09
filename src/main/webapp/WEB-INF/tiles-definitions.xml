@@ -23,6 +23,11 @@
 		<put-attribute name="css" value="/css/autenticacao.css" type="string" />
 		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/autenticacao/autenticacao.jsp" />
 	</definition>
+
+	<definition name="cadastro" extends="template-main">
+		<put-attribute name="css" value="/css/autenticacao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/cadastro/cadastro.jsp" />
+	</definition>
 	
 	<definition name="listarDiaNaoUtil" extends="template-main">
 		<put-attribute name="css" value="/css/diaNaoUtil.css" type="string" />

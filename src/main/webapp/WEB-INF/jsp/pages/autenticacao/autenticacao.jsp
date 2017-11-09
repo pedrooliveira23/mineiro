@@ -41,7 +41,7 @@
 	<button type="submit" class="btn btn-submit btn-primary">Autenticar</button> 
 </form>
 
-	<form method="post" action="<c:url value='/cadastro'/>">
+	<form method="get" action="<c:url value='/cadastro'/>">
 		<label for="btn_cadastro">Não tem conta? Crie uma agora.</label>
 		<button id="btn_cadastro" type="submit" class="btn btn-submit btn-primary">Cadastrar-se</button>
 	</form>
