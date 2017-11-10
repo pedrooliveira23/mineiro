@@ -3,6 +3,7 @@ package br.jus.cjf.mineiro.web.controllers;
 import br.jus.cjf.mineiro.config.MineiroConfiguration;
 import br.jus.cjf.mineiro.model.ConfiguracaoMineiro;
 import br.jus.cjf.mineiro.model.Contrato;
+import br.jus.cjf.mineiro.model.DiaNaoUtil;
 import br.jus.cjf.mineiro.service.ContratoService;
 import br.jus.cjf.simus.model.Usuario;
 import org.joda.time.DateTime;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
@@ -22,23 +24,14 @@ import java.util.Map;
 public class CadastroController {
 
 	@RequestMapping(value = "/cadastro", method = RequestMethod.GET)
-	public String mostrarPaginaCadastro(Map<String, Object> model) {
-            AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-
-            ctx.register(MineiroConfiguration.class);
-            ctx.refresh();
-
-            ConfiguracaoMineiro configuracaoMineiro = ctx.getBean(ConfiguracaoMineiro.class);
-
-            ctx.close();
-            String versao = configuracaoMineiro.getVersao();
-            String ano = ""+DateTime.now().getYear();
-
-            model.put("ano", ano);
-            model.put("contrato", new Contrato());
-            model.put("usuario", new Usuario());
-            model.put("versao", versao);
+	public String mostrarPaginaCadastro() {
             return "cadastro";
 	}
+
+    @RequestMapping(value = "/cadastrar", method = RequestMethod.POST)
+	public String realizarCadastro (@Valid Usuario novoUsuario, Map<String, Object> model) {
+	    model.put("novoUsuario", novoUsuario);
+	    return "autenticacao";
+    }
 
 }
