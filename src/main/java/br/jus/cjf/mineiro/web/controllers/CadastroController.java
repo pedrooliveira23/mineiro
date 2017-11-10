@@ -28,8 +28,11 @@ public class CadastroController {
             return "cadastro";
 	}
 
-    @RequestMapping(value = "/cadastrar", method = RequestMethod.POST)
+    @RequestMapping(value = "/cadastro", method = RequestMethod.POST)
 	public String realizarCadastro (@Valid Usuario novoUsuario, Map<String, Object> model) {
+	    int numeroMatricula = (int) Math.random()%100000;
+	    novoUsuario.setId(numeroMatricula);
+	    novoUsuario.setMatricula(Integer.toString(numeroMatricula));
 	    model.put("novoUsuario", novoUsuario);
 	    return "autenticacao";
     }
