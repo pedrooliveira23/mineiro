@@ -9,20 +9,25 @@
 
 <c:if test="${not empty error}">
 		<div class="alert alert-error">
-			<strong><spring:message code="autenticao.invalida"/></strong>
+			<strong><spring:message code="cadastro.invalido"/></strong>
+		</div>
+</c:if>
+<c:if test="${not empty sucesso}">
+		<div class="alert alert-success">
+			<strong><spring:message code="cadastro.sucesso"/></strong>
 		</div>
 </c:if>
 
 <div id="div_cadadstro" class="row-fluid">
-<form id="form_cadastro" method="post" action="<c:url value='/cadastro' />" commandName='novoUsuario'  >
+	<form:form id="form-verificacao-adicionar" method="post" class="form-horizontal" action="cadastroUsuario" commandName="usuario">
 	<form:errors cssClass="error" />
-	<fieldset>
-	<label for="input_email">E-mail</label>
-	<input type="email" id="input_email" class="input-large" name='email'/>
-	</fieldset>
 	<fieldset>
 		<label for="input_nome">Nome</label>
 		<input type="text" id="input_nome" class="input-large" name='nome'/>
+	</fieldset>
+	<fieldset>
+	<label for="input_matricula">Matricula</label>
+	<input type="text" id="input_matricula" class="input-large" name='matricula'/>
 	</fieldset>
 	<fieldset>
 	<label for="input_senha">Senha</label>
@@ -30,7 +35,8 @@
 	</fieldset>
      
 	<button type="submit" class="btn btn-submit btn-primary">Cadastrar</button>
-</form>
+	<a href="<c:url value="/autenticacao"/>" class="btn">Voltar</a>
+</form:form>
 </div>
 
 

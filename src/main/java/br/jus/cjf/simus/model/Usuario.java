@@ -89,6 +89,9 @@ public class Usuario implements Serializable, UserDetails {
 		return nome;
 	}
 
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
 	public List<Grupo> getGrupos() {
 		return grupos;
