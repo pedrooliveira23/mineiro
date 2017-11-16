@@ -33,10 +33,10 @@ public class CadastroController {
     public String realizarCadastro(@Valid Usuario novoUsuario, Map<String, Object> model) {
         model.put("usuario", novoUsuario);
         model.put("contrato", new Contrato());
-        int numeroMatricula = (int) Math.random() % 100000;
-        novoUsuario.setId(numeroMatricula);
+        usuarioService.gerarMatricula(novoUsuario);
         usuarioService.criarUsuario(novoUsuario);
         model.put("sucesso", true);
+        model.put("matricula", novoUsuario.getMatricula());
         return "cadastro";
     }
 }

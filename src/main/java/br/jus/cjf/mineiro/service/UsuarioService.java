@@ -8,4 +8,6 @@ import br.jus.cjf.simus.model.Usuario;
 public interface UsuarioService {
 
     void criarUsuario(Usuario usuario);
+
+    String gerarMatricula(Usuario usuario);
 }

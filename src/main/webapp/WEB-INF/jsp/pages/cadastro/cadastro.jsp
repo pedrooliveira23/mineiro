@@ -18,16 +18,18 @@
 		</div>
 </c:if>
 
+<c:if test="${not empty matricula}">
+	<div class="alert alert-success">
+		<strong>Número de Matrícula: ${matricula}</strong>
+	</div>
+</c:if>
+
 <div id="div_cadadstro" class="row-fluid">
 	<form:form id="form-verificacao-adicionar" method="post" class="form-horizontal" action="cadastroUsuario" commandName="usuario">
 	<form:errors cssClass="error" />
 	<fieldset>
 		<label for="input_nome">Nome</label>
 		<input type="text" id="input_nome" class="input-large" name='nome'/>
-	</fieldset>
-	<fieldset>
-	<label for="input_matricula">Matricula</label>
-	<input type="text" id="input_matricula" class="input-large" name='matricula'/>
 	</fieldset>
 	<fieldset>
 	<label for="input_senha">Senha</label>

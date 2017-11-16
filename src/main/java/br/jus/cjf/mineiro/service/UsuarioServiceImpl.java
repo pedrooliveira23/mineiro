@@ -26,4 +26,12 @@ public class UsuarioServiceImpl implements UsuarioService {
     public void criarUsuario(Usuario usuario) {
         usuarioDao.criarUsuario(usuario);
     }
+
+    @Override
+    public String gerarMatricula(Usuario usuario) {
+        int numeroMatricula = (int)(Math.random() * 1000000);
+        usuario.setId(numeroMatricula);
+        usuario.setMatricula(new Integer(numeroMatricula).toString());
+        return usuario.getMatricula();
+    }
 }
