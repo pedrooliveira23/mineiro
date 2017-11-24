@@ -362,10 +362,10 @@
 
             <properties>
 				<flyway.validateOnMigrate>false</flyway.validateOnMigrate>
-                <flyway.url>jdbc:mysql://localhost:3307/</flyway.url>
+                <flyway.url>jdbc:mysql://localhost:3306/</flyway.url>
                 <flyway.user>root</flyway.user>
-                <flyway.password>rootroot</flyway.password>
-                <flyway.locations>sql/migrations</flyway.locations>
+                <flyway.password>root</flyway.password>
+                <flyway.locations> sql/migrations</flyway.locations>
                 <flyway.schemas>mineiro</flyway.schemas>
             </properties>
             
@@ -400,10 +400,10 @@
                 </resources>
             </build>
             <properties>
-                <flyway.url>jdbc:mysql://localhost:3307/</flyway.url>
+                <flyway.url>jdbc:mysql://localhost:3306/</flyway.url>
                 <flyway.user>root</flyway.user>
-                <flyway.password>rootroot</flyway.password>
-                <flyway.locations>sql/migrations</flyway.locations>
+                <flyway.password>root</flyway.password>
+                <flyway.locations> sql/migrations</flyway.locations>
                 <flyway.schemas>mineiro</flyway.schemas>
             </properties>
 
@@ -439,9 +439,9 @@
           
             </build>
             <properties>
-                <flyway.url>jdbc:mysql://localhost:3307/</flyway.url>
+                <flyway.url>jdbc:mysql://localhost:3306/</flyway.url>
                 <flyway.user>root</flyway.user>
-                <flyway.password>rootroot</flyway.password>
+                <flyway.password>root</flyway.password>
                 <flyway.locations>sql/migrations, sql/test</flyway.locations>
                 <flyway.schemas>mineiro</flyway.schemas>
             </properties>

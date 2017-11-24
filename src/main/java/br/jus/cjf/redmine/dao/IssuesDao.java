@@ -32,7 +32,7 @@ public class IssuesDao {
 	@SuppressWarnings("unchecked")
 	public List<Issue> listarIssuesFechadasDeAte(Date de, Date ate) {
 		Session s = sessionFactory.getCurrentSession();
-		Query q = s.createSQLQuery(
+		Query q = s.createQuery(
 				"select distinct i from StatusJournalDetail sjd "
 				+ "	left join sjd.issueJournal ij "
 				+ "	left join ij.issue i "
@@ -58,7 +58,7 @@ public class IssuesDao {
 	@SuppressWarnings("unchecked")
 	public List<Issue> listarIssuesApartir(Date data) {
 		Session s = sessionFactory.getCurrentSession();
-		Query q = s.createSQLQuery(
+		Query q = s.createQuery(
 				"select distinct i from StatusJournalDetail sjd "
 				+ "	left join sjd.issueJournal ij "
 				+ "	left join ij.issue i "
@@ -82,7 +82,7 @@ public class IssuesDao {
         @SuppressWarnings("unchecked")
 	public List<Issue> listarIssuesAbertas(Date data) {
 		Session s = sessionFactory.getCurrentSession();
-		Query q = s.createSQLQuery(
+		Query q = s.createQuery(
 				"select distinct i from StatusJournalDetail sjd "
 				+ "	left join sjd.issueJournal ij "
 				+ "	left join ij.issue i "
@@ -105,7 +105,7 @@ public class IssuesDao {
         @SuppressWarnings("unchecked")
 	public List<Issue> listarIssue(Integer issueId) {
 		Session s = sessionFactory.getCurrentSession();
-		Query q = s.createSQLQuery(
+		Query q = s.createQuery(
 				"select distinct i from StatusJournalDetail sjd "
 				+ "	left join sjd.issueJournal ij "
 				+ "	left join ij.issue i "
@@ -127,7 +127,7 @@ public class IssuesDao {
 	@SuppressWarnings("unchecked")
 	public List<Issue> listarTodasIssues() {
 		Session s = sessionFactory.getCurrentSession();
-//		Query q = s.createSQLQuery(
+//		Query q = s.createQuery(
 //				"select distinct i from StatusJournalDetail sjd "
 //				+ "	left join sjd.issueJournal ij "
 //				+ "	left join ij.issue i "
@@ -141,7 +141,7 @@ public class IssuesDao {
 //				+ " where t.name in('Manutenção Corretiva - Garantia','Verificação de Erro','Manutenção Corretiva - Sem Solução de Contorno','Manutenção Corretiva - Com Solução de Contorno' , 'Manutenção Evolutiva','Manutenção Adaptativa',"
 //				+ " 'Desenvolvimento - Inicial','Desenvolvimento - Intermediária - Normal','Desenvolvimento - Intermediária - Arquitetura')"
 //				+ " order by i.id");
-		Query q = s.createSQLQuery(
+		Query q = s.createQuery(
 				"SELECT DISTINCT i.*" +
 						"FROM issues i" +
 						"LEFT JOIN trackers t on i.tracker_id = t.id" +
