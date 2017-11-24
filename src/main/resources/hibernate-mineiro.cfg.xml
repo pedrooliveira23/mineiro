@@ -8,9 +8,9 @@
 	
 	
     <!--                Propriedades de Desenvolvimento 				-->
-    <property name="connection.url">jdbc:mysql://localhost:3306/mineiro</property>
+    <property name="connection.url">jdbc:mysql://localhost:3307/mineiro</property>
     <property name="connection.username">root</property>
-    <property name="connection.password">root</property>
+    <property name="connection.password">rootroot</property>
 
 
                 
