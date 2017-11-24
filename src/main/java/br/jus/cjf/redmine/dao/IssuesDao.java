@@ -127,27 +127,7 @@ public class IssuesDao {
 	@SuppressWarnings("unchecked")
 	public List<Issue> listarTodasIssues() {
 		Session s = sessionFactory.getCurrentSession();
-//		Query q = s.createSQLQuery(
-//				"select distinct i from StatusJournalDetail sjd "
-//				+ "	left join sjd.issueJournal ij "
-//				+ "	left join ij.issue i "
-//				+ "	left join fetch i.project "
-//				+ "	left join fetch i.author "
-//				+ "	left join fetch i.tracker t"
-//				+ "	left join fetch i.assignedTo "
-//				+ "	left join fetch i.parent "
-//				+ "	left join fetch i.status "
-//				+ "	left join fetch i.version "
-//				+ " where t.name in('Manutenção Corretiva - Garantia','Verificação de Erro','Manutenção Corretiva - Sem Solução de Contorno','Manutenção Corretiva - Com Solução de Contorno' , 'Manutenção Evolutiva','Manutenção Adaptativa',"
-//				+ " 'Desenvolvimento - Inicial','Desenvolvimento - Intermediária - Normal','Desenvolvimento - Intermediária - Arquitetura')"
-//				+ " order by i.id");
-		Query q = s.createSQLQuery(
-				"SELECT DISTINCT i.*" +
-						"FROM issues i" +
-						"LEFT JOIN trackers t on i.tracker_id = t.id" +
-						"WHERE t.name in('Manutenção Corretiva - Garantia','Verificação de Erro','Manutenção Corretiva - Sem Solução de Contorno','Manutenção Corretiva - Com Solução de Contorno' , 'Manutenção Evolutiva','Manutenção Adaptativa','Desenvolvimento - Inicial','Desenvolvimento - Intermediária - Normal','Desenvolvimento - Intermediária - Arquitetura')" +
-						"ORDER BY i.id");
-		return q.list();
+		return (List<Issue>) s.createCriteria(Issue.class).list();
 	}
 	
 	public Issue getIssue(Integer id) {
