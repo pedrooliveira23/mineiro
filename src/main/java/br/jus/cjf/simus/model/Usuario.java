@@ -136,5 +136,9 @@ public class Usuario implements Serializable, UserDetails {
 	public boolean isEnabled() {
 		return true;
 	}
-
+	/*
+	public String getGruposFormatados(){
+		getGrupos().toString()
+	}
+*/
 }

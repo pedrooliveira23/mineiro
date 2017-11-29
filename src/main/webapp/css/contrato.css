@@ -35,6 +35,18 @@ form{
 	width: 30%;
 }
 
+.col-half{
+	width: 25%;
+}
+
+.col-half2{
+	width: 40%;
+}
+
+.col-half3{
+	width: 10%;
+}
+
 .table-inspecao th, .table-inspecao td{
 	text-align: center;	
 }

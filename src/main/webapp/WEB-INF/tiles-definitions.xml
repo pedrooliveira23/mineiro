@@ -136,5 +136,15 @@
 		<put-attribute name="css" value="/css/contrato.css" type="string" />
 		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/contrato/valores/excluirValor.jsp" />
 	</definition>
+
+	<definition name="listarUsuarios" extends="template-main">
+		<put-attribute name="css" value="/css/autenticacao.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/gestaoDePapeis/listarUsuarios.jsp" />
+	</definition>
+
+	<definition name="editarGrupo" extends="template-main">
+		<put-attribute name="css" value="/css/contrato.css" type="string" />
+		<put-attribute name="primary-content" value="/WEB-INF/jsp/pages/gestaoDePapeis/editarGrupo.jsp" />
+	</definition>
 	
 </tiles-definitions>

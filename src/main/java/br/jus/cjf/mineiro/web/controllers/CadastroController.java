@@ -2,14 +2,17 @@ package br.jus.cjf.mineiro.web.controllers;
 
 import br.jus.cjf.mineiro.model.Contrato;
 import br.jus.cjf.mineiro.service.UsuarioService;
+import br.jus.cjf.simus.model.Grupo;
 import br.jus.cjf.simus.model.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -27,6 +30,13 @@ public class CadastroController {
     @RequestMapping(value = "/cadastro", method = RequestMethod.GET)
     public String mostrarPaginaCadastro() {
         return "cadastro";
+    }
+
+    @RequestMapping(value = "/listarUsuarios", method = RequestMethod.GET)
+    public String mostrarPaginaListagem(@Valid Usuario usuario, Map<String, Object> model) {
+        model.put("usuarios",	usuarioService.listarUsuarios());
+
+        return "listarUsuarios";
     }
 
     @RequestMapping(value = "/cadastroUsuario", method = RequestMethod.POST)
