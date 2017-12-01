@@ -42,7 +42,11 @@ public class Grupo implements GrantedAuthority{
 		return nome.trim();
 	}
 	
+	@Override
+	public String toString(){
+		return getNome();
 
+	}
 	
 
 }
